@@ -12,5 +12,5 @@ def tamrin_4(x,y,y1):
     return((1 // x) * (y-y1))
 print("hasel",tamrin_4(1,50,2))
 def tamrin_5(x,M):
-    return(m.sqrt( x * m.log(M)))
+    return(m.sqrt(m.log(M)))
 print("hasel",tamrin_5(10,2))
