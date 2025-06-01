@@ -1,0 +1,58 @@
+import math as m
+
+
+def calculate_circle_area(radius):
+    area = m.pi * (radius ** 2)
+    return area
+
+def simple_math_operations(a, b, x):
+    y = (b * x) / (a / x)
+    return y
+
+def main():
+
+    print("برنامه محاسبه مساحت دایره و انجام عملیات ریاضی")
+    r = int(input("شعاع دایره را وارد کنید: "))
+    a = int(input("عدد a را وارد کنید: "))
+    b = int(input("عدد b را وارد کنید: "))
+    x = int(input("عدد x را وارد کنید: "))
+
+    
+    circle_area = calculate_circle_area(r)
+    result_y = simple_math_operations(a, b, x)
+
+  
+    print("مساحت دایره با شعاع", r, "برابر است با:", circle_area)
+    print("نتیجه عملیات ریاضی y برابر است با:", result_y)
+
+    # چند نمونه شرط برای آموزش if و elif و else
+    if circle_area > 100:
+        print("دایره بزرگ است!")
+    elif circle_area == 100:
+        print("دایره متوسط است!")
+    else:
+        print("دایره کوچک است!")
+
+    # استفاده از حلقه for برای چاپ اعداد از 1 تا 5
+    print("چند عدد از 1 تا 5:")
+    for i in range(1, 6):
+        print(i)
+
+    # استفاده از لیست و حلقه for برای چاپ آنها
+    my_list = ["سیب", "موز", "هندوانه"]
+    print("لیست میوه‌ها:")
+    for fruit in my_list:
+        print(fruit)
+
+    # نشان دادن استفاده از رشته و اندیس گذاری
+    sample_text = "Python"
+    print("حرف اول کلمه Python:", sample_text[0])
+    print("حروف 2 تا 4 کلمه Python:", sample_text[1:4])
+
+    # نشان دادن نوع داده‌ها
+    print("نوع داده r:", type(r))
+    print("نوع داده circle_area:", type(circle_area))
+    print("نوع داده my_list:", type(my_list))
+
+if __name__ == "__main__":
+    main()
